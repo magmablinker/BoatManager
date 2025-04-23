@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7584EEE8-2152-4D54-B871-105FE9BB9AD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A158C389-F4CB-442C-A1FF-2C1D3AC8AC9D}"
+	ProjectSection(SolutionItems) = preProject
+		tests\Directory.Build.props = tests\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "application", "application", "{7E3CAC42-1F43-46B1-926A-91B84DC55C5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{1FAB0E5C-BFE3-420F-BC3E-654E5B8C99DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{5B4C441B-0A17-4216-8F1D-32D0482F46B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{24BD47FE-8508-4B56-8F80-948F49616399}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OWT.BoatManager.Application.Abstractions", "src\application\OWT.BoatManager.Application.Abstractions\OWT.BoatManager.Application.Abstractions.csproj", "{459774AC-35A9-4FDE-A364-E0FA53A820C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OWT.BoatManager.Application", "src\application\OWT.BoatManager.Application\OWT.BoatManager.Application.csproj", "{F106CC15-370B-4578-8227-BC579CEA8A14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{426C4289-1D33-4020-B5C6-30DD44CC6055}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWT.BoatManager.Core", "src\core\OWT.BoatManager.Core\OWT.BoatManager.Core.csproj", "{3647DBF7-55A3-49DE-8269-DE40D9FC2E48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWT.BoatManager.Infrastructure.Persistence.EfCore", "src\infrastructure\OWT.BoatManager.Infrastructure.Persistence.EfCore\OWT.BoatManager.Infrastructure.Persistence.EfCore.csproj", "{862AC6C7-73D4-4EBB-B821-06F56868E322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWT.BoatManager.Api", "src\presentation\OWT.BoatManager.Api\OWT.BoatManager.Api.csproj", "{88437706-07BA-4D15-9978-3D0FA256BA5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWT.BoatManager.Application.Tests", "tests\OWT.BoatManager.Application.Tests\OWT.BoatManager.Application.Tests.csproj", "{3252FB1F-1EDD-4C9E-93D5-C50AA837274F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{459774AC-35A9-4FDE-A364-E0FA53A820C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459774AC-35A9-4FDE-A364-E0FA53A820C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459774AC-35A9-4FDE-A364-E0FA53A820C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459774AC-35A9-4FDE-A364-E0FA53A820C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F106CC15-370B-4578-8227-BC579CEA8A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F106CC15-370B-4578-8227-BC579CEA8A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F106CC15-370B-4578-8227-BC579CEA8A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F106CC15-370B-4578-8227-BC579CEA8A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3647DBF7-55A3-49DE-8269-DE40D9FC2E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3647DBF7-55A3-49DE-8269-DE40D9FC2E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3647DBF7-55A3-49DE-8269-DE40D9FC2E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3647DBF7-55A3-49DE-8269-DE40D9FC2E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{862AC6C7-73D4-4EBB-B821-06F56868E322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{862AC6C7-73D4-4EBB-B821-06F56868E322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{862AC6C7-73D4-4EBB-B821-06F56868E322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{862AC6C7-73D4-4EBB-B821-06F56868E322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88437706-07BA-4D15-9978-3D0FA256BA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88437706-07BA-4D15-9978-3D0FA256BA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88437706-07BA-4D15-9978-3D0FA256BA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88437706-07BA-4D15-9978-3D0FA256BA5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3252FB1F-1EDD-4C9E-93D5-C50AA837274F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3252FB1F-1EDD-4C9E-93D5-C50AA837274F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3252FB1F-1EDD-4C9E-93D5-C50AA837274F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3252FB1F-1EDD-4C9E-93D5-C50AA837274F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E3CAC42-1F43-46B1-926A-91B84DC55C5D} = {7584EEE8-2152-4D54-B871-105FE9BB9AD1}
+		{1FAB0E5C-BFE3-420F-BC3E-654E5B8C99DE} = {7584EEE8-2152-4D54-B871-105FE9BB9AD1}
+		{5B4C441B-0A17-4216-8F1D-32D0482F46B8} = {7584EEE8-2152-4D54-B871-105FE9BB9AD1}
+		{24BD47FE-8508-4B56-8F80-948F49616399} = {7584EEE8-2152-4D54-B871-105FE9BB9AD1}
+		{459774AC-35A9-4FDE-A364-E0FA53A820C9} = {7E3CAC42-1F43-46B1-926A-91B84DC55C5D}
+		{F106CC15-370B-4578-8227-BC579CEA8A14} = {7E3CAC42-1F43-46B1-926A-91B84DC55C5D}
+		{3647DBF7-55A3-49DE-8269-DE40D9FC2E48} = {1FAB0E5C-BFE3-420F-BC3E-654E5B8C99DE}
+		{862AC6C7-73D4-4EBB-B821-06F56868E322} = {5B4C441B-0A17-4216-8F1D-32D0482F46B8}
+		{88437706-07BA-4D15-9978-3D0FA256BA5F} = {24BD47FE-8508-4B56-8F80-948F49616399}
+		{3252FB1F-1EDD-4C9E-93D5-C50AA837274F} = {A158C389-F4CB-442C-A1FF-2C1D3AC8AC9D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFC3D868-DF83-46F3-BF55-C6C4C18AF077}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,52 @@
+<ng-container *transloco="let t">
+    <h2 mat-dialog-title class="h2">
+        {{ isNew ? t('BoatEdit.Create.Title') : t('BoatEdit.Edit.Title') }}
+    </h2>
+    <mat-dialog-content>
+        <form id="edit-form" [formGroup]="formGroup" (ngSubmit)="submit()">
+            <div class="flex flex-col gap-2">
+                <mat-form-field>
+                    <mat-label>{{ t('Boat.Property.Name') }}</mat-label>
+                    <input matInput formControlName="name" />
+                    <mat-error>
+                        <!-- 
+                            Not in a seperate component for the sake of simplicity.
+                            Could be refactored into a component that gathers all errors and 
+                            displays the specific messages.
+                        -->
+                        @let nameRequired = formGroup.controls.name.getError("required");
+                        @if(nameRequired) {
+                            {{ t('Common.Errors.Required') }}
+                        }
+
+                        @let nameMaxLength = formGroup.controls.name.getError("maxlength");
+                        @if(nameMaxLength) {
+                            {{ t('Common.Errors.MaxLength', { maxLength: 64 })}}
+                        }
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>{{ t('Boat.Property.Description') }}</mat-label>
+                    <textarea matInput formControlName="description" class="resize-none" rows="10"></textarea>
+                    <mat-error>
+                        @let descriptionRequired = formGroup.controls.description.getError("required");
+                        @if(descriptionRequired) {
+                            {{ t('Common.Errors.Required') }}
+                        }
+
+                        @let descriptionMaxLength = formGroup.controls.description.getError("maxlength");
+                        @if(descriptionMaxLength) {
+                            {{ t('Common.Errors.MaxLength', { maxLength: 500 })}}
+                        }
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </form>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-button mat-dialog-close>{{ t('Common.Discard') }}</button>
+        <button mat-flat-button type="submit" form="edit-form">
+          {{ t('Common.Save') }}
+        </button>
+    </mat-dialog-actions>
+</ng-container>

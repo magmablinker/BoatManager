@@ -1,0 +1,5 @@
+@use 'tailwindcss';
+@use '@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+html, body { height: 100%; overflow: hidden; background-color: #202020; color: white; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,16 @@
+{
+  "Boat.Message.Deleted": "Boat deleted",
+  "Boat.Message.Saved": "Boat saved",
+  "Boat.Property.Description": "Description",
+  "Boat.Property.Name": "Name",
+  "BoatEdit.Create.Title": "Create boat",
+  "BoatEdit.Edit.Title": "Edit boat",
+  "Common.ConfirmDelete": "Are you sure? This action is irreversible.",
+  "Common.Discard": "Discard",
+  "Common.Errors.MaxLength": "Max. {{maxLength}} characters",
+  "Common.Errors.NotFound": "The requested resource could not be found",
+  "Common.Errors.Required": "Required field",
+  "Common.Navigation.Back": "Back",
+  "Common.NoItemsAvailable": "There are no items available",
+  "Common.Save": "Save"
+}

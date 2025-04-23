@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\OWT.BoatManager.Core\OWT.BoatManager.Core.csproj" />
+    <ProjectReference Include="..\OWT.BoatManager.Application.Abstractions\OWT.BoatManager.Application.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="FluentValidation" Version="11.11.0" />
+	<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.4" />
+	<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.4" />
+	<PackageReference Include="Riok.Mapperly" Version="4.2.1" />
+  </ItemGroup>
+
+</Project>
