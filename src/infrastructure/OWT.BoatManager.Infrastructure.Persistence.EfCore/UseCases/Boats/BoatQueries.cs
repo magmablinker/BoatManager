@@ -13,8 +13,10 @@ internal sealed class BoatQueries : IBoatQueries
     }
 
     public async Task<Boat?> FindAsync(Guid id, CancellationToken cancellationToken = default) =>
-        await _context.Boats.FindAsync([id], cancellationToken);
+        await _context.Boats.AsNoTracking()
+            .SingleOrDefaultAsync(b => b.Id == id, cancellationToken);
 
     public async Task<IReadOnlyList<Boat>> GetAllAsync(CancellationToken cancellationToken = default) =>
-        await _context.Boats.ToListAsync(cancellationToken);
+        await _context.Boats.AsNoTracking()
+            .ToListAsync(cancellationToken);
 }
